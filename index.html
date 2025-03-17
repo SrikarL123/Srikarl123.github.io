@@ -10,50 +10,51 @@
             margin: 0;
             padding: 0;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 150vh;
             background-color: #E0F7FA;
             text-align: center;
         }
 
-        .container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 80%;
-            max-width: 1200px;
-        }
-
-        .text-container {
-            text-align: left;
-            flex: 1;
-            padding: 20px;
-        }
-
         .photo-container {
-            flex: 1;
-            padding: 20px;
+            margin-bottom: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
         .photo-container img {
-            max-width: 250px;
-            width: 250px;
-            height: 250px;
+            max-width: 150px;
+            width: 150px;
+            height: 150px;
             background-color: #f0e6f6;
             object-fit: cover;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
         }
 
+        .container {
+            width: 80%;
+            max-width: 1200px;
+        }
+
+        .text-container {
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .links {
             margin-top: 20px;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 300px;
         }
 
         .links a {
@@ -80,16 +81,18 @@
             white-space: nowrap;
         }
 
-        .text-container h2 {
-            font-size: 1rem;
-            color: #555;
+        .animated-text-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 15px 0;
         }
 
         .animated-text {
             font-size: 1.5rem;
             font-weight: bold;
             color: #007BFF;
-            display: inline-block;
+            display: block;
             margin-bottom: 20px;
             opacity: 0;
             animation: slideIn 3s forwards;
@@ -121,29 +124,28 @@
         }
 
         @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-            }
             .photo-container img {
-                width: 200px;
-                height: 200px;
+                width: 120px;
+                height: 120px;
             }
         }
     </style>
 </head>
 <body>
+    <!-- Image at the top center -->
+    <div class="photo-container">
+        <img src="your-photo.jpg" alt="Srikar Lokai">
+    </div>
 
     <div class="container">
-        <!-- Left side (text and description) -->
+        <!-- Text content centered below the image -->
         <div class="text-container">
-            <h1>Srikar Lokai</h1>  <!-- Name first -->
-            <div class="animated-text on-screen">On-Screen: A passionate Data Analyst</div>
-            <div class="animated-text off-screen">Off-Screen: A passionate Writer</div>
-        </div>
-
-        <!-- Right side (photo) -->
-        <div class="photo-container">
-            <img src="your-photo.jpg" alt="Srikar Lokai">
+            <h1>Srikar Lokai</h1>
+            
+            <div class="animated-text-container">
+                <div class="animated-text on-screen">On-Screen: A passionate Data Analyst</div>
+                <div class="animated-text off-screen">Off-Screen: A Creative Writer</div>
+            </div>
         </div>
     </div>
 
@@ -153,7 +155,7 @@
         <a href="https://github.com/SrikarL123/POWERBI-PROJECTS" target="_blank">Power-BI Projects</a> 
         <a href="https://www.wattpad.com/user/sriwrts" target="_blank">Wattpad</a> 
         <a href="https://www.instagram.com/srikarlokai/" target="_blank">My Instagram</a>
+        <a href="mailto:srikar0912@gmail.com">Contact Me</a> 
     </div>
-
 </body>
 </html>
