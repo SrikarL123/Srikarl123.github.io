@@ -1,161 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Srikar Lokai - Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 150vh;
-            background-color: #E0F7FA;
-            text-align: center;
-        }
+    <title>Srikar Lokai</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./project.css">
+    <script src="./project.js" defer></script>
 
-        .photo-container {
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .photo-container img {
-            max-width: 150px;
-            width: 150px;
-            height: 150px;
-            background-color: #f0e6f6;
-            object-fit: cover;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        .container {
-            width: 80%;
-            max-width: 1200px;
-        }
-
-        .text-container {
-            text-align: center;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .links {
-            margin-top: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            max-width: 300px;
-        }
-
-        .links a {
-            margin: 10px;
-            text-decoration: none;
-            font-size: 1.5rem;
-            color: #333;
-            border: 1px solid #333;
-            padding: 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-            width: 200px;
-            text-align: center;
-        }
-
-        .links a:hover {
-            background-color: #007BFF;
-            color: white;
-        }
-
-        .text-container h1 {
-            font-size: 2rem;
-            color: #333;
-            white-space: nowrap;
-        }
-
-        .animated-text-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 15px 0;
-        }
-
-        .animated-text {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #007BFF;
-            display: block;
-            margin-bottom: 20px;
-            opacity: 0;
-            animation: slideIn 3s forwards;
-        }
-
-        /* "On-Screen" animation - no delay */
-        .animated-text.on-screen {
-            animation-delay: 0s; /* "On-Screen" text starts immediately */
-        }
-
-        /* "Off-Screen" animation - delay of 3 seconds */
-        .animated-text.off-screen {
-            animation-delay: 3s; /* "Off-Screen" text starts after 3 seconds */
-        }
-
-        @keyframes slideIn {
-            0% {
-                transform: translateX(-100%);
-                opacity: 0;
-            }
-            50% {
-                transform: translateX(20px);
-                opacity: 0.7;
-            }
-            100% {
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .photo-container img {
-                width: 120px;
-                height: 120px;
-            }
-        }
-    </style>
 </head>
 <body>
-    <!-- Image at the top center -->
-    <div class="photo-container">
-        <img src="your-photo.jpg" alt="Srikar Lokai">
-    </div>
-
-    <div class="container">
-        <!-- Text content centered below the image -->
-        <div class="text-container">
-            <h1>Srikar Lokai</h1>
-            
-            <div class="animated-text-container">
-                <div class="animated-text on-screen">On-Screen: A passionate Data Analyst</div>
-                <div class="animated-text off-screen">Off-Screen: A Creative Writer</div>
-            </div>
+    <!-- header  -->
+     <header class="header">
+        <div class="logo">
+            <h>Welcome</h>
         </div>
-    </div>
 
-    <!-- Links below the text -->
-    <div class="links">
-        <a href="https://www.linkedin.com/in/srikar-lokai/" target="_blank">My LinkedIn</a> 
-        <a href="https://github.com/SrikarL123/POWERBI-PROJECTS" target="_blank">Power-BI Projects</a> 
-        <a href="https://www.wattpad.com/user/sriwrts" target="_blank">Wattpad</a> 
-        <a href="https://www.instagram.com/srikarlokai/" target="_blank">My Instagram</a>
-        <a href="mailto:srikar0912@gmail.com">Contact Me</a> 
+        <nav class="nav">
+
+            <ul class="nav-points">
+                <li><a href="project.html">Home</a></li>
+                <li><a href="https://www.linkedin.com/in/srikar-lokai/" target="_blank">Linkedin</a></li>
+                <li><a href="https://github.com/SrikarL123/POWERBI-PROJECTS" target="_blank">Projects</a></li>
+                <li><a href="https://www.wattpad.com/user/sriwrts" target="_blank">Wattpad</a></li>
+                <li><a href="https://drive.google.com/file/d/1uKnlea_Our0wOFwF7E_BX3y2N1Ui4y6j/view?usp=drive_link" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+
+     </header>
+
+
+    <!-- banner -->
+     
+    <section class="banner">
+
+        <div class="details">
+            <p class="t1">I am</p>
+            <p class="t2">Srikar Lokai</p>
+            <div class="t3-container">
+                <p class="slide-in">On-Screen: A passionate data analyst</p>
+                <p class="slide-in">Off-Screen: A creative writer</p>
+            </div>
+            
+            
+            
+
+        </div>
+
+        <div class="person">
+            <img class="person-img" src="./img.jpg" alt="Spider-man">
+        </div>
+
+    </section>
+
+    <!-- services -->
+
+    <section class="services">
+        <h1 class="section-title"> Skills</h1>
+        <div class="section-child">
+            <div class="service">
+
+                <i class="fa-solid fa-laptop icon"></i>
+                <h2>Data Analysis</h2>
+                <h3>Excel . PowerBi . Tableau</h3>
+                <p class="service-txt">
+                    Intermediate level
+                    <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad saepe consequatur, libero nam quia nostrum blanditiis quisquam doloremque, ratione iste officiis aut totam nemo. Reprehenderit qui ad tempora sed nisi! -->
+                </p>
+                    <!-- <button class="service-btn">View more</button> -->
+            </div>
+
+            <div class="service">
+                <i class="fa-solid fa-robot icon"></i>
+                <h2>Prompt Engineering</h2>
+                <h3>ChatGPT, ClaudeAI, Perplexity AI</h3>
+                <p class="service-txt">
+                    Intermediate level
+                    <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad saepe consequatur, libero nam quia nostrum blanditiis quisquam doloremque, ratione iste officiis aut totam nemo. Reprehenderit qui ad tempora sed nisi! -->
+                </p>
+                    <!-- <button class="service-btn">View more</button> -->
+            </div>
+
+            <div class="service">
+
+                <i class="fa-solid fa-book-open-reader icon"></i>
+                <h2>Reading</h2>
+                <h3>Thriller . Self-help . Romance</h3>
+                <p class="service-txt">
+                    Atleast 3 pages/day
+                    <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad saepe consequatur, libero nam quia nostrum blanditiis quisquam doloremque, ratione iste officiis aut totam nemo. Reprehenderit qui ad tempora sed nisi! -->
+                </p>
+                    <!-- <button class="service-btn">View more</button> -->
+            </div>
+
+            <div class="service">
+
+                <i class="fa-solid fa-pen-nib icon"></i>
+                <h2>Writing</h2>
+                <h3>Thriller . Romance . Fiction</h3>
+                <p class="service-txt">
+                    Passionate Writer
+                    <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad saepe consequatur, libero nam quia nostrum blanditiis quisquam doloremque, ratione iste officiis aut totam nemo. Reprehenderit qui ad tempora sed nisi! -->
+                </p>
+                    <!-- <button class="service-btn">View more</button> -->
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+<!-- quote section -->
+ <section class="quote">
+    <div class="overlay">
+        
     </div>
+ </section>
+
+
+
+    <!-- footer -->
+
+    <footer class="footer">
+        <button class="cts-bottom">
+            <a href="mailto:srikarlokai@example.com?subject=Hello%20from%20Your%20Portfolio&body=Hi%20Srikar%2C%0A%0AI%20would%20like%20to%20contact%20you%20about%20...">Contact Me</a>
+        </button>
+    </footer>
+    
 </body>
+
+<!-- <button id="darkModeToggle">🌙</button> -->
+
+
 </html>
